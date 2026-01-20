@@ -3,7 +3,7 @@ Ans.8
 import java.io .*;
 import java.util .*;
 class UserMainCode{
-public int countEvens(int input1, int input2, int input3, int input4, int input5){
+public int countOdds(int input1, int input2, int input3, int input4, int input5){
 int count =0;
 if(input1%2 != 0)
 count++;
@@ -18,3 +18,4 @@ count++;
 return count;
 }
 }
+
