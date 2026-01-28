@@ -1,0 +1,23 @@
+Que.19  Is Palindrome Possible?
+Ans.19  
+import java.io.*;
+import java.util.*;
+class UserMainCode{
+public int isPalinNumPossible(int input1){
+int [] freq=new int[10];
+  while(input1>0){
+  int d=input1%10;
+  freq[d]++;
+  input1=input1/10;
+  }int oddCount=0;
+  int i=0;
+  while(i<10){
+  if(freq[i]%2!=0){
+  oddCount++;
+  }i++;
+  }if(oddCount<=1)
+  return 2;
+  else
+  return 1;
+  }
+}
