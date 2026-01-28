@@ -1,0 +1,17 @@
+Que.20 Number of Primes in a Specified range.
+Ans.20 
+import java.io.*;
+import java.util.*;
+class UserMainCode{
+public int countPrimesInRange(int input1,int input2){
+int count=0;
+ while(input1<=input2){
+ int i=2;
+ while(i<=input1/2 && input1%i!=0)
+  i++;
+  if(i>input1/2)
+   count++;
+  input1++;
+ }return count;
+ }
+}
