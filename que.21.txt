@@ -1,0 +1,13 @@
+Que.21  Weight of a hill pattern.
+Ans.21
+import java.io.*;
+import java.util.*;
+class UserMainCode{
+public int totalHillWeight(int input1,int input2,int input3){
+int sum=0;
+for(int i=1;i<=input1;i++){
+sum += input2*i;
+input2=input2+input3;
+}return sum;
+}
+}
