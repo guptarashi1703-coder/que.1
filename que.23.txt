@@ -1,0 +1,12 @@
+Que.23 Return second word in Uppercase.
+Ans.23
+import java.io.*;
+import java.util.*;
+class UserMainCode{
+public String secondWordUpperCase(String input1){
+String[] a=input1.split(" ");
+if(a.length<2)
+return "LESS";
+return a[1].toUpperCase();
+}
+}
